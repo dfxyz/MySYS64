@@ -9,7 +9,7 @@ wget -c $url -O /tmp/$name
 [[ $? != 0 ]] && exit
 files=()
 for file in $(zipinfo -1 /tmp/$name); do
-    [[ $file =~ .*exe$|.*dll$|html$ ]] && files+=($file)
+    case $file in *.exe|*.dll|*.html) files+=($file);; esac
 done
 unzip -u /tmp/$name ${files[@]} -d /usr/lib/git-core
 echo ${files[@]} | tr ' ' '\n' > /usr/lib/git-core/gcmw_files
