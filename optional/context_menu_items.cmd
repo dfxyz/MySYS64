@@ -1,10 +1,11 @@
 @echo off
 setlocal
-
 chcp 65001 >nul 2>&1
 
+cd %~dp0\..
+
 set itemName="在此处打开 MySYS64 终端(&T)"
-set exePath=%~dp0%terminal.exe
+set exePath=%__CD__%terminal.exe
 set regPath1=HKCR\Directory\shell\MySYS64
 set regPath2=HKCR\Directory\background\shell\MySYS64
 
