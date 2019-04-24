@@ -8,7 +8,7 @@ Basic steps:
 4. Done!
 
 If any core package like 'filesystem' or 'pacman' is upgraded,
-'setup.sh' is required to execute again.
+or 'MySYS64' is moved to other place, 'setup.sh' should be execute again.
 
 Optional:
 * Execute 'context_menu_items.cmd' as administartors to add or remove 

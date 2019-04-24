@@ -1,4 +1,5 @@
-#!bash
+# ensure '/usr/bin' is in $PATH
+PATH=${PATH}:/usr/bin
 
 cd $(dirname $0)
 
