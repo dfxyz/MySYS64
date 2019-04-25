@@ -11,6 +11,7 @@
 # Export some basic variables
 export MSYSTEM=${MSYSTEM:-MINGW64}
 export MSYS=${MSYS:-winsymlinks:nativestrict}
+export CHERE_INVOKING=1
 
 # Some resources...
 # Customizing Your Shell: http://www.dsl.org/cookbook/cookbook_5.html#SEC69
