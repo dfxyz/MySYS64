@@ -1,6 +1,9 @@
 # ensure '/usr/bin' is in $PATH
 PATH=${PATH}:/usr/bin
 
+# use native symlink
+MSYS=winsymlinks:nativestrict
+
 cd $(dirname $0)
 
 # override configurations

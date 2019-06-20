@@ -23,7 +23,6 @@ int main(int argc, const char* argv[]) {
         return 1;
     }
 
-    putenv("MSYS=winsymlinks:nativestrict");
     putenv("CHERE_INVOKING=1");
 
     char zshPath[PATH_MAX];
