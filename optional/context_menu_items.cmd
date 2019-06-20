@@ -2,7 +2,7 @@
 setlocal
 chcp 65001 >nul 2>&1
 
-cd %~dp0\..
+cd /d %~dp0\..
 
 set itemName="在此处打开 MySYS64 终端(&T)"
 set exePath=%__CD__%terminal.exe
@@ -15,7 +15,9 @@ if %errorlevel% == 0 (
     reg delete %regPath2% /f >nul 2>&1
 ) else (
     reg add %regPath1% /ve /d %itemName% >nul 2>&1
+    reg add %regPath1% /v icon /d %exePath%,0 >nul 2>&1
     reg add %regPath1%\command /ve /d %exePath% >nul 2>&1
     reg add %regPath2% /ve /d %itemName% >nul 2>&1
+    reg add %regPath2% /v icon /d %exePath%,0 >nul 2>&1
     reg add %regPath2%\command /ve /d %exePath% >nul 2>&1
 )
