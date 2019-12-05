@@ -2,6 +2,7 @@
 ## MSYS2 repository mirrorlist
 ##
 
+Server = https://mirrors.ustc.edu.cn/msys2/msys/$arch
 Server = https://mirrors.tuna.tsinghua.edu.cn/msys2/msys/$arch
 Server = http://repo.msys2.org/msys/$arch
 Server = https://downloads.sourceforge.net/project/msys2/REPOS/MSYS2/$arch
